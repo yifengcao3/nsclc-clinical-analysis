@@ -1,0 +1,105 @@
+---
+title: "Project Proposal"
+author: "Yifeng Cao"
+date: "2026-07-03"
+output: html_document
+---
+
+# Project Proposal: Clinical Trial Landscape Analysis in Non-Small Cell Lung Cancer (NSCLC)
+
+## Trends in Statistical Design, Methodology, and Clinical Efficacy (2010–2026)
+
+---
+
+# Background and Motivation
+
+## Industry Background
+
+Drug development for complex diseases such as non-small cell lung cancer (NSCLC) is increasingly challenged by limitations of conventional fixed clinical trial designs, including small sample sizes, slow patient recruitment, lengthy development timelines, and substantial disease heterogeneity. Emerging approaches such as Bayesian adaptive designs and master protocols have the potential to improve trial efficiency, reduce patient exposure to ineffective treatments, and accelerate evidence generation.
+
+## Personal Motivation
+
+I am currently a Ph.D. student with a background in biology and a growing interest in biostatistics, statistical programming, and clinical trial methodology. While I have experience in biological research, I have had relatively limited exposure to large-scale genomic and biomarker analyses.
+
+Interestingly, after sharing fourteen healthcare-related internship job descriptions with several AI assistants, two independently highlighted the importance of rare disease and biomarker-driven clinical development. Their observations inspired me to explore how statistical methodologies are evolving alongside precision medicine. As advances in AI continue to improve our ability to identify patterns from genomic and biomarker data, integrating these data into clinical trial design is becoming increasingly important.
+
+This project aims to strengthen my skills in clinical trial methodology, reproducible statistical programming in R, and biomarker trend analysis using real-world clinical trial data.
+
+## Project Value
+
+The project is designed to closely align with the core competencies expected in biostatistics internships, including:
+
+- Real-world clinical data extraction and processing
+- Statistical trend analysis
+- Reproducible workflows in R
+- Technical communication through professional reports
+
+---
+
+# Objectives
+
+This project will evaluate the current landscape of NSCLC clinical trials through a three-level analytical framework.
+
+## Level 1 – Evolution of Trial Designs
+
+Quantify the adoption and temporal trends of Bayesian adaptive designs and master protocols in NSCLC clinical trials between 2010 and 2026.
+
+## Level 2 – Clinical Outcome Insights
+
+Compare innovative trial designs with conventional fixed designs by examining trial outcomes, including study duration, completion status, and other available efficacy-related metrics.
+
+## Level 3 – Biological Rationale
+
+Integrate public TCGA datasets to characterize the distribution of major NSCLC biomarkers (e.g., EGFR and KRAS mutations), providing molecular evidence supporting the need for precision-oriented clinical trial designs.
+
+---
+
+# Methodology
+
+## Data Sources
+
+### Clinical Trial Data
+
+- Extract NSCLC clinical trial records from the AACT database using **DBI** and **RPostgres**.
+
+### Molecular Data
+
+- Retrieve genomic and biomarker information from publicly available **TCGA/GDC** datasets.
+
+## Analytical Workflow
+
+### 1. Data Engineering
+
+- Data cleaning and standardization in R.
+- Use regular expressions (Regex) to identify trial design characteristics from the `brief_title` and `detailed_description` fields.
+
+### 2. Statistical Analysis
+
+- Trend analysis of innovative trial designs.
+- Nonparametric comparisons between study groups.
+- Integration of external survival data using Kaplan–Meier analyses to support clinical hypotheses.
+
+### 3. Reproducible Research
+
+- Develop a structured GitHub repository.
+- Generate reproducible HTML reports using Quarto.
+
+---
+
+# Expected Deliverables
+
+- **Technical Memo** (1–2 pages) summarizing key findings for a hypothetical clinical development team.
+- **Tables, Listings, and Figures (TLFs)** following common industry reporting practices.
+- **Comprehensive Analysis Report** generated with Quarto.
+- **Reproducible GitHub Repository** containing data processing pipelines, statistical analyses, and documentation.
+
+---
+
+# Implementation Roadmap
+
+| Timeline | Tasks |
+|----------|-------|
+| **Days 1–5** | Environment setup, database connection, NSCLC data extraction, and initial data cleaning |
+| **Days 6–9** | Feature engineering, text mining for innovative trial designs, data standardization, and Level 1 trend analysis |
+| **Days 10–12** | Level 2 outcome analyses, biomarker integration, and Kaplan–Meier analyses for Level 3 |
+| **Days 13–14** | Documentation, report writing, and GitHub repository organization |

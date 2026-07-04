@@ -1,0 +1,19 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "Clinical Project Report"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+
+execute:
+  freeze: auto
