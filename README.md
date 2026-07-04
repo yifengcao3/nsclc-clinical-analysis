@@ -3,7 +3,7 @@
 > **A reproducible R-based project analyzing trends in innovative clinical trial designs for non-small cell lung cancer (NSCLC) from 2010 to 2026.**
 
 This project investigates how modern clinical trial methodologies—including Bayesian adaptive designs and master protocols—have evolved in NSCLC clinical research. By integrating data from the ClinicalTrials.gov AACT database with public genomic resources (TCGA), the project explores both methodological trends and their biological rationale.
-
+     
 ---
 
 ## Project Goals
